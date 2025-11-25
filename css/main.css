@@ -2595,3 +2595,15 @@ blockquote span{
     color: #ffffff;
     opacity: 0.8;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+
+.logo_text{
+     font-family: "Marcellus", serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: #481714;
+        margin-bottom: 0;
+}
