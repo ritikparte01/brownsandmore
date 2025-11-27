@@ -2596,6 +2596,10 @@ blockquote span{
     opacity: 0.8;
 }
 
+.snappify{
+    color: orangered !important;
+    font-weight: bold;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 

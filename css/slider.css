@@ -1,7 +1,7 @@
 /* ==========================================================================
    Slider Section
    ========================================================================== */
-.slider-content-wrap{ height: 650px; }
+.slider-content-wrap{ height: 90svh; }
 .dl-slider .overlay{
 	background-color: rgba(0,0,0,0.3);
 	width: 100%;
