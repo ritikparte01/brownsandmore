@@ -354,7 +354,7 @@ button{
 /*========== Section Food Design ==========*/
 .pos-rel{position: relative;}
 .food-1{
-    background-image: url(../img/food-1.png);
+       background-image: url(../img/bgimgcholtehalone.png);
     background-repeat: no-repeat;
     background-position: right top;
     background-size: contain;
@@ -365,7 +365,7 @@ button{
     top: 0;
 }
 .food-2{
-    background-image: url(../img/food-2.png);
+       background-image: url(../img/bgimgcholtehalftwo.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: contain;
@@ -870,6 +870,8 @@ ul.nav > li > a.active{
 }
 .section-heading img{
     margin-bottom: 15px;
+        height: 50px;
+    width: 50px;
 }
 
 /* ==========================================================================
@@ -2496,7 +2498,7 @@ blockquote span{
    Widget Section
    ========================================================================== */
 .widget-section{
-    background-image: url(../img/new_bg_2.jpg);
+    background-image: url(../img/footer.png);
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     background-size: cover;
@@ -2610,4 +2612,12 @@ blockquote span{
         font-weight: bold;
         color: #481714;
         margin-bottom: 0;
+}
+.promo-section{
+        background-color: #ffe7c0;
+}
+
+
+.about-img img{
+    width: 100%;
 }
