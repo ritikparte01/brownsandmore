@@ -942,7 +942,7 @@ ul.nav > li > a.active{
 .product-thumb img{
     width: 100%;
     height: 250px;
-    object-fit: contain;
+    object-fit: cover;
 }
 .product-content{
     background-color: #ffffff;
@@ -950,7 +950,7 @@ ul.nav > li > a.active{
     border-top: 1px solid #eee;
 }
 .product-content h3{
-    font-size: 20px;
+    font-size: 16px;
     display: block;
     margin-bottom: 0;
 }
