@@ -1,0 +1,221 @@
+// Import products data
+const products = [
+    {
+        id: 1,
+        name: "Assorted Chocolates",
+        category: "assorted",
+        price: 599,
+        oldPrice: 799,
+        image: "products/assorted or moulded.png",
+        description: "Premium assorted & moulded chocolates handcrafted with finest ingredients. Perfect for gifting or treating yourself to a luxurious chocolate experience.",
+        fullDescription: "Our assorted chocolates collection features a carefully curated selection of handcrafted chocolates. Each piece is made with premium cocoa and finest ingredients, offering a delightful mix of flavors and textures. Perfect for special occasions or as a thoughtful gift."
+    },
+    {
+        id: 2,
+        name: "Chocolate Bonbons",
+        category: "bonbons",
+        price: 399,
+        oldPrice: 499,
+        image: "products/bonbons.png",
+        description: "Handcrafted chocolate bonbons with rich, creamy fillings",
+        fullDescription: "Exquisite handcrafted bonbons featuring smooth ganache centers and premium chocolate shells. Each bonbon is carefully crafted to deliver a perfect balance of texture and flavor, making every bite a memorable experience."
+    },
+    {
+        id: 3,
+        name: "Chocolate Bars",
+        category: "bars",
+        price: 249,
+        oldPrice: 299,
+        image: "products/chocolate bars.png",
+        description: "Premium chocolate bars in various flavors",
+        fullDescription: "Our premium chocolate bars are made from the finest cocoa beans, carefully roasted and processed to bring out rich, complex flavors. Available in dark, milk, and white chocolate varieties, each bar offers a pure chocolate experience."
+    },
+    {
+        id: 4,
+        name: "Chocolate Spread",
+        category: "spread",
+        price: 299,
+        oldPrice: 349,
+        image: "products/chocolate spread.png",
+        description: "Rich and creamy chocolate spread",
+        fullDescription: "Indulgent chocolate spread made with premium cocoa and hazelnuts. Perfect for spreading on toast, pancakes, or enjoying straight from the jar. Rich, creamy texture with an irresistible chocolate flavor."
+    },
+    {
+        id: 5,
+        name: "Chocolate Cookies",
+        category: "cookies",
+        price: 199,
+        oldPrice: 249,
+        image: "products/cookies.png",
+        description: "Delicious chocolate cookies with chocolate chips",
+        fullDescription: "Crispy on the outside, soft on the inside - our chocolate cookies are loaded with premium chocolate chips. Baked fresh with quality ingredients for the perfect cookie experience every time."
+    },
+    {
+        id: 6,
+        name: "Cocoa Powder",
+        category: "powder",
+        price: 349,
+        oldPrice: 449,
+        image: "products/cocoa powder.png",
+        description: "Premium quality cocoa powder for baking",
+        fullDescription: "Pure, unsweetened cocoa powder sourced from the finest cocoa beans. Ideal for baking, hot chocolate, and culinary creations. Rich chocolate flavor and smooth texture guaranteed."
+    },
+    {
+        id: 7,
+        name: "Compound Chocolate",
+        category: "compound",
+        price: 279,
+        oldPrice: 329,
+        image: "products/compound.png",
+        description: "Quality compound chocolate for cooking",
+        fullDescription: "Versatile compound chocolate perfect for coating, molding, and baking. Easy to work with and delivers consistent results. Ideal for home bakers and professional chocolatiers alike."
+    },
+    {
+        id: 8,
+        name: "Beverages Mix",
+        category: "beverages",
+        price: 229,
+        oldPrice: 279,
+        image: "products/beverages mix.png",
+        description: "Rich chocolate beverage mix for hot drinks",
+        fullDescription: "Premium chocolate beverage mix that creates rich, creamy hot chocolate drinks. Just add hot milk or water for a delicious chocolate drink. Perfect for cozy evenings and cold days."
+    }
+];
+
+// Get product ID from URL
+function getProductIdFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return parseInt(urlParams.get('id'));
+}
+
+// Find product by ID
+function getProductById(id) {
+    return products.find(product => product.id === id);
+}
+
+// Render product details
+function renderProductDetails() {
+    const productId = getProductIdFromURL();
+    const product = getProductById(productId);
+    
+    if (!product) {
+        // If product not found, show default or redirect
+        console.error('Product not found');
+        document.querySelector('.shop-details h2').textContent = 'Product Not Found';
+        return;
+    }
+    
+    // Update product images
+    const carousel = document.querySelector('.shop-single-carousel');
+    if (carousel) {
+        carousel.innerHTML = `
+            <div><img src="img/${product.image}" alt="${product.name}"></div>
+        `;
+        
+        // Reinitialize owl carousel if needed
+        if (typeof $.fn.owlCarousel !== 'undefined') {
+            $(carousel).owlCarousel({
+                loop: false,
+                margin: 0,
+                items: 1,
+                nav: false,
+                dots: false,
+                autoplay: false
+            });
+        }
+    }
+    
+    // Update product details
+    const detailsSection = document.querySelector('.shop-details');
+    if (detailsSection) {
+        detailsSection.querySelector('h2').textContent = product.name;
+        detailsSection.querySelector('h3').innerHTML = `₹${product.price} ${product.oldPrice ? '<span>₹' + product.oldPrice + '</span>' : ''}`;
+        detailsSection.querySelector('p').textContent = product.description;
+    }
+    
+    // Update product description
+    const descriptionSection = document.querySelector('.description');
+    if (descriptionSection) {
+        descriptionSection.querySelector('h3').textContent = 'Product Description';
+        const descParagraphs = descriptionSection.querySelectorAll('p');
+        if (descParagraphs.length >= 1) {
+            descParagraphs[0].textContent = product.fullDescription || product.description;
+        }
+        if (descParagraphs.length >= 2) {
+            descParagraphs[1].textContent = `Category: ${product.category.charAt(0).toUpperCase() + product.category.slice(1)} | Premium Quality Chocolate Product`;
+        }
+    }
+    
+    // Update page header
+    const pageHeader = document.querySelector('.page-content h2');
+    if (pageHeader) {
+        pageHeader.textContent = product.name;
+    }
+    
+    const pageDesc = document.querySelector('.page-content p');
+    if (pageDesc) {
+        pageDesc.textContent = product.description;
+    }
+}
+
+// Add to cart functionality
+function addToCart() {
+    const productId = getProductIdFromURL();
+    const product = getProductById(productId);
+    const quantity = document.querySelector('.item-plus-minus input').value;
+    
+    if (product) {
+        console.log(`Added ${quantity} x ${product.name} to cart`);
+        alert(`Added ${quantity} x ${product.name} to cart!`);
+        // Here you can implement actual cart functionality
+    }
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    renderProductDetails();
+    
+    // Setup add to cart button
+    const addToCartBtn = document.querySelector('.cart-wrap .default-btn');
+    if (addToCartBtn) {
+        addToCartBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            addToCart();
+        });
+    }
+    
+    // Setup quantity controls
+    const quantityInput = document.querySelector('.item-plus-minus input');
+    if (quantityInput) {
+        // Add plus/minus functionality if needed
+        const container = quantityInput.parentElement;
+        
+        // Create plus and minus buttons if they don't exist
+        if (!container.querySelector('.plus')) {
+            const minusBtn = document.createElement('button');
+            minusBtn.className = 'minus';
+            minusBtn.textContent = '-';
+            minusBtn.type = 'button';
+            
+            const plusBtn = document.createElement('button');
+            plusBtn.className = 'plus';
+            plusBtn.textContent = '+';
+            plusBtn.type = 'button';
+            
+            container.insertBefore(minusBtn, quantityInput);
+            container.appendChild(plusBtn);
+            
+            minusBtn.addEventListener('click', function() {
+                let value = parseInt(quantityInput.value);
+                if (value > 1) {
+                    quantityInput.value = value - 1;
+                }
+            });
+            
+            plusBtn.addEventListener('click', function() {
+                let value = parseInt(quantityInput.value);
+                quantityInput.value = value + 1;
+            });
+        }
+    }
+});
