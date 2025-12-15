@@ -2000,8 +2000,10 @@ height: 100% !important;
     color: #ffffff;
 }
 .blog-item .blog-thumb img{
-    width: 100%;
+ width: 100%;
     margin: 0;
+    height: 300px;
+    object-fit: cover;
 }
 .blog-content{
     background-color: #ffffff;

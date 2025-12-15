@@ -142,7 +142,7 @@ const postsPerPage = 4; // Show all 4 posts
 
 // Function to render blog posts
 function renderBlogs(page = 1) {
-    const blogContainer = document.querySelector('.blog-wrap .col-lg-8 .row');
+    const blogContainer = document.querySelector('.blog-wrap .col-lg-12 .row');
     
     if (!blogContainer) {
         console.error('Blog container not found');
