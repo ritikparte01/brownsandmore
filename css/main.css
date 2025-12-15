@@ -2972,6 +2972,9 @@ blockquote span{
     color: #8d9aa8;
     margin: 0;
 }
+.customfooter{
+    justify-content: space-between;
+}
 .cstm-class {
     width: 100% !important;
 }
