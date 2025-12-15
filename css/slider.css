@@ -74,7 +74,7 @@
 }
 @media (max-width: 768px) {
     .dl-slider .slider-content{
-        padding-left: 50px;
+        padding-left: 20px;
     }
 }
 .dl-slider .dl-caption.dl-border{
@@ -158,6 +158,7 @@
     .dl-slider .dl-caption.small{
         font-size: 12px;
         line-height: 20px;
+        width: 85%;
     }
     .dl-slider .dl-btn-group{
         margin-top: 10px;
@@ -179,8 +180,7 @@
 @media only screen and (max-width: 520px) {
     
     .dl-slider .dl-caption.big{
-        font-size: 24px;
-        letter-spacing: -0.5px;
+        font-size: 20px;
     }
    .dl-slider .dl-caption.small br{
         display: none;
