@@ -2778,6 +2778,7 @@ blockquote span{
     object-fit: contain;
     margin-bottom: 20px;
     height: 204px;
+    mix-blend-mode: multiply;
 }
 
 .subsection-title {
