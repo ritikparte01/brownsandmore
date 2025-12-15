@@ -63,7 +63,13 @@
                                <li><a class='nav-link active' data-scroll href='/organze/'>Home<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li><a href='/organze/about'>About Us</a></li>
-                                <li><a href='/organze/services'>Services</a></li>
+                                <li><a href='/organze/services'>Services</a>
+                                    <ul>
+                                        <li><a href='/private-label.html'>Private Label</a></li>
+                                        <li><a href='/white-label.html'>White Label</a></li>
+                                        <li><a href='/blog-single.html'>Corporate Gifting</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href='/organze/shop'>Shop</a>
                                     <ul>
                                        <li><a href='/organze/shop'>Shop Page</a></li>

@@ -64,7 +64,13 @@
                             <li><a class='nav-link active' data-scroll href='/index.html'>Home<span class="sr-only">(current)</span></a>
                             </li>
                             <li><a href='/about.html'>About Us</a></li>
-                            <li><a href='/services.html'>Services</a></li>
+                            <li><a href='/services.html'>Services</a>
+                             <ul>
+                                    <li><a href='/private-label.html'>Private Label</a></li>
+                                    <li><a href='/white-label.html'>White Label</a></li>
+                                    <li><a href='/blog-single.html'>Corporate Gifting</a></li>
+                                </ul>
+                            </li>
                             <li><a href='/shop.html'>Products</a>
                                 <!-- <ul>
                                     <li><a href='/shop.html'>Shop Page</a></li>
@@ -102,7 +108,10 @@
 
         <div class="header-height"></div>
 
-        <section class="page-header">
+        <section class="page-header videplayback">
+            <video autoplay muted loop playsinline>
+                <source src="img/bg-video.mp4" type="video/mp4">
+            </video>
             <div class="page-header-bottom"></div>
             <div class="container">
                 <div class="page-content text-center">
@@ -112,35 +121,61 @@
             </div>
         </section><!--/.page-header-->
 
-        <section class="about-section padding">
-            <div class="container">
-                <div class="about-wrap row">
-                    <div class="col-md-6 xs-padding">
-                        <div class="about-content">
-                           <div class="section-heading">
-                                <img src="img/icon.png" alt="img">
-                                <h2>Premium Chocolate Manufacturing <br>Excellence For Your Brand!</h2>
-                                <p>Browns and More specializes in industrial and commercial chocolate manufacturing with state-of-the-art facilities. We offer private label and white label solutions with decades of expertise in cocoa processing, chocolate formulation, and custom packaging.</p>
-                           </div>
-                            <ul class="about-info">
-                                <li><i class="ti-hand-point-right"></i>Custom Manufacturing Solutions</li>
-                                <li><i class="ti-hand-point-right"></i>State-of-the-Art Facilities</li>
-                                <li><i class="ti-hand-point-right"></i>100% Quality Assurance</li>
-                                <li><i class="ti-hand-point-right"></i>Ethical Sourcing</li>
-                            </ul>
-                            <a class="default-btn" href="#">Explore Our Products<span></span></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 xs-padding">
-                        <div class="about-img">
-                            <img src="img/choclate3.jpg" alt="img">
+ <section class="product-carousel-section bg-grey padding">
+        <div class="container">
+            <div class="section-heading mb-40 text-center">
+                <!-- <img src="img/icon.png" alt="img"> -->
+                <h2>Chocolate Innovations Designed for <br> Modern Brands</h2>
+                <p>Explore our extensive range of premium chocolate products including bars, truffles, <br>pralines, and custom chocolate solutions for your brand.</p>
+            </div>
+            <div class="custom-carousel-wrapper">
+                <div class="custom-carousel-container">
+                    <div class="carousel-slide active">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12 padding-15">
+                                <div class="product-item">
+                                    <div class="product-thumb">
+                                        <img src="img/manfct.png" alt="img">
+                                    </div>
+                                    <div class="product-content text-center">
+                                        <h3><a href='product-details.html'>A technologically advanced chocolate manufacturing facility engineered for precision
+and scale.</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 padding-15">
+                                <div class="product-item">
+                                    <div class="product-thumb">
+                                        <img src="img/prodenv.png" alt="img">
+                                    </div>
+                                    <div class="product-content text-center">
+                                        <h3><a href='product-details.html'>A fully controlled production environment ensuring product stability, uncompromised
+hygiene, and consistent quality.</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 padding-15">
+                                <div class="product-item">
+                                    <div class="product-thumb">
+                                        <img src="img/qa.png" alt="img">
+                                    </div>
+                                    <div class="product-content text-center">
+                                        <h3><a href='product-details.html'>A fully controlled production environment ensuring product stability, uncompromised
+hygiene, and consistent quality.</a></h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+              
+                </div>
             </div>
-        </section><!--/.about-section-->
+        </section> 
+        
+        <!--/.about-section-->
 
-        <section class="team-section padding bg-grey">
+        <!-- <section class="team-section padding bg-grey">
             <div class="container">
                 <div class="section-heading mb-40 text-center">
                     <img src="img/icon.png" alt="img">
@@ -214,9 +249,9 @@
                     </div>
                 </div>
             </div>
-        </section><!--/.team-section-->
+        </section> -->
 
-        <section class="feature-section padding">
+        <!-- <section class="feature-section padding">
             <div class="container">
                 <div class="feature-wrap row">
                     <div class="col-lg-6 sm-padding">
@@ -255,7 +290,7 @@
                     </div>
                 </div>
             </div>
-        </section><!--/.feature-section-->
+        </section> -->
 
         <section class="testimonial-section bg-grey padding">
             <div class="container">
@@ -316,23 +351,81 @@
                 </div>
             </div>
         </section><!--/.testimonial-section-->
-
+ <section class="faq-section padding">
+        <div class="container">
+            <div class="section-heading mb-40 text-center">
+                <img src="img/icon.png" alt="img">
+                <h2>Frequently Asked <br>Questions</h2>
+                <p>Find answers to common questions about our <br>chocolate manufacturing services.</p>
+            </div>
+            <div class="faq-wrap row">
+                <div class="col-md-6 xs-padding">
+                    <div class="faq-item">
+                        <img src="img/bgchoclate.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-md-6 xs-padding">
+                    <div id="accordion" class="faq-item">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is Private Label Chocolate Manufacturing?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">Private label chocolate manufacturing allows you to create custom chocolate products branded under your company name. We handle production, quality control, and packaging with your specifications.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What are the Minimum Order Quantities?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">Browns and More offers flexible minimum order quantities to accommodate businesses of all sizes. Contact us for specific details based on your product requirements.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Do You Offer Sustainable Sourcing?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">Yes, we are committed to ethical and sustainable cocoa sourcing with a focus on supporting farmers and forest conservation globally.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
         <div class="sponsor-section">
             <div class="container">
-                <div id="sponsor-carousel" class="sponsor-carousel owl-carousel">
+                <div id="sponsor-carousel" class="sponsor-carousel owl-carousel custom_carousel">
                     <div class="sponsor-item">
-                        <img src="img/sponsor1.png" alt="sponsor">
+                        <img src="img/fssai.png" alt="sponsor">
                     </div>
                     <div class="sponsor-item">
-                        <img src="img/sponsor2.png" alt="sponsor">
+                        <img src="img/iso 22000.png" alt="sponsor">
                     </div>
                     <div class="sponsor-item">
-                        <img src="img/sponsor3.png" alt="sponsor">
+                        <img src="img/iso 9001.png" alt="sponsor">
                     </div>
                     <div class="sponsor-item">
-                        <img src="img/sponsor4.png" alt="sponsor">
+                        <img src="img/haccp.png" alt="sponsor">
                     </div>
-                    <div class="sponsor-item">
+                    <!-- <div class="sponsor-item">
                         <img src="img/sponsor5.png" alt="sponsor">
                     </div>
                     <div class="sponsor-item">
@@ -343,7 +436,7 @@
                     </div>
                     <div class="sponsor-item">
                         <img src="img/sponsor8.png" alt="sponsor">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div><!--/.sponsor-section-->
@@ -424,5 +517,33 @@
 		<script src="js/vendor/wow.min.js"></script>
 		<script src="js/main.js"></script>
 
-    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a2216c79eee8fcd',t:'MTc2Mzc0ODA1MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+		<script>
+			// Custom Carousel Auto-play
+			let currentSlide = 0;
+			const slides = document.querySelectorAll('.carousel-slide');
+			const totalSlides = slides.length;
+
+			function showSlide(n) {
+				slides.forEach(slide => slide.classList.remove('active'));
+				if (n >= totalSlides) currentSlide = 0;
+				if (n < 0) currentSlide = totalSlides - 1;
+				slides[currentSlide].classList.add('active');
+			}
+
+			function nextSlide() {
+				currentSlide++;
+				showSlide(currentSlide);
+			}
+
+			function prevSlide() {
+				currentSlide--;
+				showSlide(currentSlide);
+			}
+
+			// Auto-play carousel every 5 seconds
+			setInterval(nextSlide, 5000);
+
+			// Initialize
+			showSlide(currentSlide);
+		</script></body>
 </html>

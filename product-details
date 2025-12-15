@@ -63,7 +63,13 @@
                                <li><a class='nav-link active' data-scroll href=''>Home<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li><a href='about.html'>About Us</a></li>
-                                <li><a href='services.html'>Services</a></li>
+                                <li><a href='services.html'>Services</a>
+                                    <ul>
+                                        <li><a href='private-label.html'>Private Label</a></li>
+                                        <li><a href='white-label.html'>White Label</a></li>
+                                        <li><a href='blog-single.html'>Corporate Gifting</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href='shop.html'>Shop</a>
                                     <ul>
                                        <li><a href='shop.html'>Shop Page</a></li>
