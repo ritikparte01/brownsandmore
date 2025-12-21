@@ -231,11 +231,45 @@
                 <div class="feature-wrap row">
                     <div class="col-lg-6 sm-padding">
                         <div class="feature-img">
-                            <img src="img/choclate3.jpg" alt="img">
+                            <div id="packaging-carousel" class="packaging-carousel owl-carousel">
+                                <div class="packaging-item">
+                                    <img src="img/products/foil wrapped.png" alt="Premium Foil Wrapped Chocolates">
+                                </div>
+                                <div class="packaging-item">
+                                    <img src="img/products/double twist.png" alt="Custom Wrapper Designs">
+                                </div>
+                                <div class="packaging-item">
+                                    <img src="img/products/secondary 1.png" alt="Custom Bar Packaging">
+                                </div>
+                                <div class="packaging-item">
+                                    <img src="img/products/top twist.png" alt="Premium Gold Foil Packaging">
+                                </div>
+                                <div class="packaging-item">
+                                    <img src="img/products/seasonal 1.png" alt="Luxury Gift Box Packaging">
+                                </div>
+                                <div class="packaging-item">
+                                    <img src="img/products/seasonal 2.png" alt="Festive & Seasonal Packaging">
+                                </div>
+                                <div class="packaging-item">
+                                    <img src="img/products/seasonal 3.png" alt="Premium Presentation Packaging">
+                                </div>
+                                <div class="packaging-item">
+                                    <img src="img/products/secondary 2.png" alt="Stand-Up Pouch Packaging">
+                                </div>
+                                <div class="packaging-item">
+                                    <img src="img/products/secondary 3.png" alt="Jar & Container Packaging">
+                                </div>
+                                <div class="packaging-item">
+                                    <img src="img/products/secondary 4.png" alt="Metal Tin Packaging">
+                                </div>
+                                <div class="packaging-item">
+                                    <img src="img/products/flow.png" alt="Luxury Box Packaging">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 sm-padding">
-                        <div class="feature-info">
+                        <div class="feature-info grpackaging-info">
                            <div class="section-heading">
                                <!-- <img src="img/icon.png" alt="img"> -->
                                 <h2>Premium Packaging <br>Solutions</h2>
@@ -386,6 +420,24 @@ delivering exceptional chocolate solutions tailored for industrial and commercia
 		<script src="js/vendor/slick.min.js"></script>
 		<script src="js/vendor/wow.min.js"></script>
 		<script src="js/main.js"></script>
+
+    <script>
+        // Initialize packaging carousel
+        $(document).ready(function(){
+            $('#packaging-carousel').owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                nav: false,
+                dots: true,
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                smartSpeed: 800
+            });
+        });
+    </script>
 
     <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a2216c79eee8fcd',t:'MTc2Mzc0ODA1MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
