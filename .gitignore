@@ -1,0 +1,7 @@
+# Large video files
+*.mp4
+
+# Other common files to ignore
+node_modules/
+.DS_Store
+Thumbs.db
