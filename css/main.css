@@ -563,7 +563,7 @@ ul.nav > li > a.active{
     line-height: 45px;
     display: block;
     padding: 0 15px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     letter-spacing: -0.2px;
     color: #6a8695;
@@ -1556,6 +1556,7 @@ height: 100% !important;
     background-color: #ffffff;
     position: relative;
     padding: 30px;
+    height: 244px;
     border-left: 4px solid #481714;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -3020,6 +3021,12 @@ blockquote span{
         line-height: 26px;
         margin-bottom: 10px;
     }
+    .ind-image-showcase{
+    min-height: 257px !important;
+}
+.ind-card-content{
+    padding-bottom: 0;
+}
 }
 
 /* Packaging Section Styles */
@@ -3193,5 +3200,11 @@ display: none;
     }
     .grpackaging-info{
     padding-top: 21px;
+}
+.ind-image-showcase{
+    min-height: 257px;
+}
+.ind-card-content{
+    padding-bottom: 0;
 }
 }
