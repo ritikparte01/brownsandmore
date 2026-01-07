@@ -1272,6 +1272,10 @@ height: 100% !important;
     background-size: cover;
     background-position: center center;
 }
+.cta-section-inner{
+    padding: 20px 0;
+    background-color: white;
+}
 .cta-wrap{
     display: flex;
     align-items: center;
@@ -1784,6 +1788,14 @@ height: 100% !important;
 #google-map{
     width: 100%;
     height: 400px;
+}
+
+/* Ensure select text is visible in contact form */
+.contact-section select.form-control,
+.contact-section select.form-control option,
+.contact-section .form-control.select-form{
+    color: #0e1318;
+    -webkit-text-fill-color: #0e1318;
 }
 
 /* ==========================================================================
