@@ -1790,14 +1790,6 @@ height: 100% !important;
     height: 400px;
 }
 
-/* Ensure select text is visible in contact form */
-.contact-section select.form-control,
-.contact-section select.form-control option,
-.contact-section .form-control.select-form{
-    color: #0e1318;
-    -webkit-text-fill-color: #0e1318;
-}
-
 /* ==========================================================================
    Contact Section
    ========================================================================== */
